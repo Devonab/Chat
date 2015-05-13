@@ -1,0 +1,126 @@
+/* STYLES.CSS */
+
+@import url(normalize.css);
+@import url(fonts.css);
+
+/* ----------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    position: relative;
+    font: 16px/150% 'lato', arial, helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+html, body { width: 100%; height: 100%;}
+
+#home,
+#inscription {
+    background: url(../img/background.jpg) no-repeat fixed center / cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* ---------------------- */
+
+#home h1,
+#inscription h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+
+#home main section,
+#inscription main section {
+    position: relative;
+    width: 350px;
+    padding: 25px;
+    height: auto;
+    background-color: #F6F5F5;
+    color: #181717;
+    border-top: 10px solid #D93615;
+    border-radius: 10px;
+    padding-bottom: 80px;
+    text-align: right;
+}
+
+#home main section h1,
+#inscription main section h1{
+    font-weight: normal;
+    color: #181717;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+#home main section ol,
+#inscription main section ol { list-style: none; margin: 0; padding: 0; }
+
+#home main section ol li,
+#inscription main section ol li { margin: 20px 0; text-align: left; }
+
+#home main section ol li input, 
+#inscription main section ol li input { 
+    width: 100%;
+    display: block; 
+    border: 1px solid #929292;
+    padding: 10px;
+}
+
+#home main section ol li:nth-child(3),
+#inscription main section ol li:nth-child(4) { display: none; }
+
+#home main section ol li input[type="submit"],
+#inscription main section ol li input[type="submit"] {
+    position: absolute;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0;
+    width: 100%;
+    background-color: #D93615;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    -webkit-appearance: none;
+    letter-spacing: 5px;
+    padding: 20px 0;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+#home input[type="submit"]:hover,
+#inscription input[type="submit"]:hover { background-color: #9A1915; }
+
+.error { color: #D93615; }
+.log_error { 
+    text-align: left;
+    margin: 10px 0;
+    color: #D93615; 
+    border-top: 1px solid #D93615; 
+    border-bottom: 1px solid #D93615;
+}
+
+#home main a,
+#inscription main a
+{
+    text-align: right;
+    text-decoration: underline;
+    color: #929292;
+}
